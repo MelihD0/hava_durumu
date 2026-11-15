@@ -21,7 +21,7 @@ namespace Hava_Durumu_Projesi_C_
         private void Form1_Load(object sender, EventArgs e)
         {
             label4.Text=DateTime.Now.ToShortDateString();
-            string api = "b3d75769ee34cb6c6615349e96465448";
+            string api = "API_KEY";
             string connection = "https://api.openweathermap.org/data/2.5/weather?q=Tekirda%C4%9F&mode=xml&lang=tr&units=metric&appid=" + api;
             XDocument hava = XDocument.Load(connection);
 
